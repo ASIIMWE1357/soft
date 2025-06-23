@@ -1,0 +1,361 @@
+
+<!--- products.html --->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="P-Paint Products - Premium quality paints for every surface">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Our Products | P-Paint</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --white: #ffffff;
+        }
+        
+        .product-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), url('img/bg-img/product-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .product-section {
+            padding: 80px 0;
+        }
+        
+        .product-detail {
+            margin-bottom: 80px;
+        }
+        
+        .product-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .product-features {
+            margin: 30px 0;
+        }
+        
+        .product-features li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .product-features li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        
+        .specs-table tr:nth-child(even) {
+            background-color: var(--light);
+        }
+        
+        .specs-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .specs-table td:first-child {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a class="nav-brand" href="index.html">
+                <h2 style="color: var(--primary); font-weight: 700;">P-PAINT</h2>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="classy-navbar" id="essenceNav">
+                <div class="classy-menu">
+                    <div class="classynav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="colors.html">Color Palette</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Product Hero Area Start ##### -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Our Premium Paint Products</h1>
+                    <p>Mastering life with every stroke of color</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Product Hero Area End ##### -->
+
+    <!-- ##### Vinyl Paint Section Start ##### -->
+    <section id="vinyl" class="product-section">
+        <div class="container">
+            <div class="product-detail">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="product-image">
+                            <img src="img/vinili1.jpg" alt="Vinyl Paint Application">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>VINYL PAINT</h2>
+                        <p class="lead">Bring harmony to your walls with our premium vinyl emulsion paint.</p>
+                        <p>Our high-quality vinyl paint provides excellent coverage and a durable, washable finish perfect for interior walls. Specially formulated for Ugandan conditions to resist cracking and peeling while maintaining vibrant colors.</p>
+                        
+                        <div class="product-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Excellent coverage and hide</li>
+                                <li>Washable and scrub-resistant</li>
+                                <li>Low odor and low VOC formula</li>
+                                <li>Dries to a smooth, even finish</li>
+                                <li>Available in all our color collections</li>
+                                <li>Resistant to mold and mildew</li>
+                            </ul>
+                        </div>
+                        
+                        <table class="specs-table">
+                            <tr>
+                                <td>Type</td>
+                                <td>Vinyl Emulsion</td>
+                            </tr>
+                            <tr>
+                                <td>Finish</td>
+                                <td>Matt</td>
+                            </tr>
+                            <tr>
+                                <td>Coverage</td>
+                                <td>12-14 m² per liter</td>
+                            </tr>
+                            <tr>
+                                <td>Drying Time</td>
+                                <td>2-4 hours (touch dry)</td>
+                            </tr>
+                            <tr>
+                                <td>Available Sizes</td>
+                                <td>1L, 4L, 20L</td>
+                            </tr>
+                        </table>
+                        
+                        <a href="https://wa.me/256784153887?text=I'm%20interested%20in%20Vinyl%20Paint" class="btn essence-btn btn-lg">
+                            <i class="fab fa-whatsapp"></i> Inquire About Vinyl Paint
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ##### Vinyl Paint Section End ##### -->
+
+    <!-- ##### Weather Guard Section Start ##### -->
+    <section id="weather-guard" class="product-section bg-light">
+        <div class="container">
+            <div class="product-detail">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="product-image">
+                            <img src="img/paint.jpg" alt="Weather Guard Paint Application">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <h2>WEATHER GUARD</h2>
+                        <p class="lead">The perfect protection against rain or sunshine.</p>
+                        <p>Our Weather Guard paint is specially formulated to protect your home or business against Uganda's harsh weather conditions, including intense sun and heavy rains. This matt emulsion paint provides superior protection while maintaining beautiful color.</p>
+                        
+                        <div class="product-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Superior weather resistance</li>
+                                <li>UV protection to prevent fading</li>
+                                <li>Waterproof and breathable</li>
+                                <li>Resists cracking and peeling</li>
+                                <li>Excellent adhesion to various surfaces</li>
+                                <li>Long-lasting color retention</li>
+                            </ul>
+                        </div>
+                        
+                        <table class="specs-table">
+                            <tr>
+                                <td>Type</td>
+                                <td>Exterior Emulsion</td>
+                            </tr>
+                            <tr>
+                                <td>Finish</td>
+                                <td>Matt</td>
+                            </tr>
+                            <tr>
+                                <td>Coverage</td>
+                                <td>10-12 m² per liter</td>
+                            </tr>
+                            <tr>
+                                <td>Drying Time</td>
+                                <td>4-6 hours (touch dry)</td>
+                            </tr>
+                            <tr>
+                                <td>Available Sizes</td>
+                                <td>4L, 20L</td>
+                            </tr>
+                        </table>
+                        
+                        <a href="https://wa.me/256784153887?text=I'm%20interested%20in%20Weather%20Guard%20Paint" class="btn essence-btn btn-lg">
+                            <i class="fab fa-whatsapp"></i> Inquire About Weather Guard
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Weather Guard Section End ##### -->
+
+    <!-- ##### Silk Paint Section Start ##### -->
+    <section id="silk" class="product-section">
+        <div class="container">
+            <div class="product-detail">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="product-image">
+                            <img src="img/slick.jpg" alt="Silk Paint Application">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>SILK PAINT</h2>
+                        <p class="lead">Our masterpiece paint for sophisticated spaces.</p>
+                        <p>This premium silk paint offers a luxurious smooth finish with a subtle sheen that adds elegance to any room. Perfect for creating a sophisticated look while being practical for modern living. Our silk paint is the choice for discerning homeowners.</p>
+                        
+                        <div class="product-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Elegant silky finish</li>
+                                <li>Light-reflecting properties</li>
+                                <li>Highly washable and durable</li>
+                                <li>Excellent coverage in fewer coats</li>
+                                <li>Resists stains and marks</li>
+                                <li>Available in designer color palettes</li>
+                            </ul>
+                        </div>
+                        
+                        <table class="specs-table">
+                            <tr>
+                                <td>Type</td>
+                                <td>Silk Emulsion</td>
+                            </tr>
+                            <tr>
+                                <td>Finish</td>
+                                <td>Silk</td>
+                            </tr>
+                            <tr>
+                                <td>Coverage</td>
+                                <td>14-16 m² per liter</td>
+                            </tr>
+                            <tr>
+                                <td>Drying Time</td>
+                                <td>1-2 hours (touch dry)</td>
+                            </tr>
+                            <tr>
+                                <td>Available Sizes</td>
+                                <td>1L, 4L, 20L</td>
+                            </tr>
+                        </table>
+                        
+                        <a href="https://wa.me/256784153887?text=I'm%20interested%20in%20Silk%20Paint" class="btn essence-btn btn-lg">
+                            <i class="fab fa-whatsapp"></i> Inquire About Silk Paint
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Silk Paint Section End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer_area" style="background-color: var(--dark); color: var(--white); padding: 40px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h3>P-PAINT</h3>
+                    <p>"Don't break the bank, break out the color."</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="footer-links" style="list-style: none; padding: 0;">
+                        <li><a href="index.html" style="color: var(--white);">Home</a></li>
+                        <li><a href="products.html" style="color: var(--white);">Products</a></li>
+                        <li><a href="colors.html" style="color: var(--white);">Colors</a></li>
+                        <li><a href="index.html#contact" style="color: var(--white);">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-right">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> P-Paint. All rights reserved.</p>
+                    <p>Peculiar African Paint - SMG Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="js/classy-nav.min.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+</html>

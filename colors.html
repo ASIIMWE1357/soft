@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Paint Color Palette</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        .header_area {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .classy-nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-brand h2 {
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .classynav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .classynav ul li {
+            margin-left: 30px;
+        }
+        
+        .classynav ul li a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .classynav ul li a:hover {
+            color: #e74c3c;
+        }
+        
+        /* Color Palette Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        
+        .col-md-4 {
+            width: 33.33%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+        
+        .color-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .color-swatch {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            margin: 0 auto 15px;
+            border: 1px solid #eee;
+        }
+        
+        /* Specific Color Definitions */
+        #candy-land-5012 { background-color: #FF6B6B; }
+        #coral-5052 { background-color: #FF8E8E; }
+        #balerena-5040 { background-color: #6BD5E1; }
+        #basanti-5055 { background-color: #FFD166; }
+        #cameo-5080 { background-color: #C5CBE3; }
+        #our-cannas { background-color: #A5DD9B; }
+        #masterpiece-white { background-color: #F8F9FA; border: 1px solid #ddd; }
+        #harmony-beige { background-color: #E6CCB2; }
+        #african-sunset { background-color: #E29578; }
+        
+        .color-code {
+            display: inline-block;
+            background: #f8f9fa;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 10px 0;
+        }
+        
+        /* Footer Styles */
+        .footer_area {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .col-md-4 {
+                width: 50%;
+            }
+            
+            .classynav ul {
+                display: none; /* Mobile menu would go here */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .col-md-4 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <a class="nav-brand" href="index.html">
+                <h2>P-PAINT</h2>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="classy-navbar" id="essenceNav">
+                <div class="classy-menu">
+                    <div class="classynav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="colors.html">Color Palette</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>P-Paint Color Palette</h1>
+        
+        <!-- Candy Land Collection -->
+        <h2>Candy Land Collection</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="candy-land-5012" class="color-swatch"></div>
+                    <h3>CANDY LAND</h3>
+                    <span class="color-code">5012</span>
+                    <p>Vibrant and playful tone</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="coral-5052" class="color-swatch"></div>
+                    <h3>CORAL</h3>
+                    <span class="color-code">5052</span>
+                    <p>Warm and inviting shade</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="balerena-5040" class="color-swatch"></div>
+                    <h3>BALERENA</h3>
+                    <span class="color-code">5040</span>
+                    <p>Cool and refreshing hue</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Basanti Collection -->
+        <h2>Basanti Collection</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="basanti-5055" class="color-swatch"></div>
+                    <h3>BASANTI</h3>
+                    <span class="color-code">5055</span>
+                    <p>Golden sunshine tone</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="cameo-5080" class="color-swatch"></div>
+                    <h3>CAMEO</h3>
+                    <span class="color-code">5080</span>
+                    <p>Soft and elegant neutral</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="our-cannas" class="color-swatch"></div>
+                    <h3>OUR CANNA'S</h3>
+                    <p>Natural green tone</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Special Collection -->
+        <h2>Special Collection</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="masterpiece-white" class="color-swatch"></div>
+                    <h3>MASTERPIECE WHITE</h3>
+                    <p>Pure, clean white</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="harmony-beige" class="color-swatch"></div>
+                    <h3>HARMONY BEIGE</h3>
+                    <p>Warm neutral tone</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="color-card">
+                    <div id="african-sunset" class="color-swatch"></div>
+                    <h3>AFRICAN SUNSET</h3>
+                    <p>Rich terracotta hue</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>P-PAINT</h3>
+                    <p>"Don't break the bank, break out the color."</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>&copy; <script>document.write(new Date().getFullYear());</script> P-Paint</p>
+                    <p>Peculiar African Paint - SMG Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
